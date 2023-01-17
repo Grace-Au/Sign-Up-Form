@@ -1,0 +1,217 @@
+:root {
+  --color: #f85b62;
+  --hover: #f85b63bd;
+  --txt: #b9b9b9;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
+  color: var(--txt);
+  background-color: black;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* left hand side */
+.sidePic {
+  width: 40vw;
+  background-image: url("https://images.unsplash.com/photo-1590675170188-47dfcc27f427?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+/* logo */
+.logo {
+  background-color: rgba(0, 0, 0, 0.532);
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0.5vw;
+  margin-top: 10vh;
+  padding: 1vw 0;
+}
+
+.logo img {
+  background-color: rgba(255, 255, 255, 0);
+  height: 10vh;
+}
+
+/* right hand side */
+.formSection {
+  width: 60vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.formSection h2 {
+  margin-bottom: 35px;
+}
+
+.italian {
+  font-style: italic;
+}
+
+.container {
+  width: 45vw;
+  margin-left: 3vw;
+}
+
+.title {
+  margin-bottom: 100px;
+}
+
+/* form  */
+form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+form > p {
+  font-size: 1.3em;
+  color: var(--color);
+  width: 60vw;
+}
+
+form label {
+  color: #454545;
+  font-size: 0.9em;
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+label > input {
+  display: block;
+  border: 1px solid #323232;
+  color: #ffffff93;
+  border-radius: 5px;
+  width: 20vw;
+  font-size: 1.2em;
+  padding: 0.2em 0.2em;
+  font-family: "Josefin Slab", serif;
+}
+
+label > input:focus {
+  border-color: var(--hover);
+}
+
+.error,
+.error > div {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  width: 20vw;
+}
+/* button  */
+button {
+  padding: 10px 0;
+  width: 200px;
+  font-size: 1.5em;
+  border: 2px solid var(--color);
+  border-radius: 10px;
+  color: var(--color);
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  margin: 25px 0 40px 0;
+}
+
+button:hover {
+  color: black;
+  background-color: var(--color);
+}
+
+/* last line */
+.logIn {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.logIn a {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logIn a:hover {
+  color: var(--hover);
+}
+
+.logIn a:visited {
+  color: #f9cf7b;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .sidePic {
+    width: auto;
+  }
+
+  .logo {
+    padding: 30px 0;
+    margin: 0;
+  }
+
+  .formSection {
+    width: auto;
+    align-items: center;
+  }
+
+  .container {
+    width: auto;
+    margin: 50px;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  form {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  form label {
+    font-size: 1em;
+  }
+
+  form input {
+    width: auto;
+    text-align: center;
+  }
+  .error,
+  .error > div {
+    width: 100%;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+
+  .logIn {
+    margin: 0;
+  }
+}
